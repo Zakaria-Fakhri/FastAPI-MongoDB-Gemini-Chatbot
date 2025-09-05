@@ -8,7 +8,7 @@ This service lets you upload a JSON file with your own articles and then chat wi
 ## Features
 - Upload articles JSON -> stored in MongoDB (Motor, async)
 - Ask questions -> build context from your stored articles -> Google Gemini
-- Answers must come ONLY from your articles; otherwise: "I don't have information on that."
+-Prompt: Answers must come ONLY from your articles; otherwise: "I don't have information on that."
 
 ## Project Structure
 - `main.py` – FastAPI app and endpoints (`/upload`, `/chat`)
@@ -78,4 +78,5 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
 ## Notes
 - The model is instructed to answer only from the provided articles. If not answerable, it responds with: "I don't have information on that."
 - Context is trimmed if too long to fit typical token limits.
+
 
