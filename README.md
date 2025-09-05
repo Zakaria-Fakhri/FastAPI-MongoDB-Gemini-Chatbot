@@ -1,7 +1,7 @@
 # FastAPI + MongoDB + Gemini Chatbot (Terminal only)
 
 This service lets you upload a JSON file with your own articles and then chat with an AI that answers strictly based on those articles using Google Gemini.
-> Note: This is a primitive chatbot built as part of the MVP for [Autonomio.app](https://autonomio.app).  
+> Note: This is a primitive chatbot built as part of the MVP for my Project [Autonomio.app](https://autonomio.app).  
 > It uses Google Gemini to answer strictly based on the uploaded articles.  
 
 
@@ -78,5 +78,6 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
 ## Notes
 - The model is instructed to answer only from the provided articles. If not answerable, it responds with: "I don't have information on that."
 - Context is trimmed if too long to fit typical token limits.
+
 
 
