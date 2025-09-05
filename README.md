@@ -17,7 +17,7 @@ This service lets you upload a JSON file with your own articles and then chat wi
 - `models.py` – Pydantic models for requests/responses
 - `utils.py` – Helpers (context building, trimming)
 - `requirements.txt` – Dependencies
-- `.env.example` – Environment variable template
+- `.env` – Environment variable template
 
 ## Environment
 Create a `.env` file (or set env vars in your shell):
@@ -78,6 +78,7 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
 ## Notes
 - The model is instructed to answer only from the provided articles. If not answerable, it responds with: "I don't have information on that."
 - Context is trimmed if too long to fit typical token limits.
+
 
 
 
