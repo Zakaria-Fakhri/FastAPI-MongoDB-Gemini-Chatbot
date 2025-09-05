@@ -42,7 +42,7 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
-2. Start MongoDB (e.g., local Docker or MongoDB Community install).
+2. Start MongoDB (local Docker or MongoDB Community install).
 
 3. Start the API server:
 
@@ -75,9 +75,6 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
 ]
 ```
 
-## Notes
-- The model is instructed to answer only from the provided articles. If not answerable, it responds with: "I don't have information on that."
-- Context is trimmed if too long to fit typical token limits.
 
 
 
