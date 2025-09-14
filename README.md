@@ -30,7 +30,7 @@ GEMINI_MODEL=gemini-1.5-flash
 ```
 
 ## Run
-1. Create and activate a virtual environment (Windows PowerShell):
+1. Create and activate a virtual environment :
 
 ```powershell
 py -m venv .venv
@@ -38,7 +38,7 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
-2. Start MongoDB (local Docker or MongoDB Community install).
+2. Start MongoDB .
 
 3. Start the API server:
 
