@@ -20,7 +20,7 @@ This service lets you upload a JSON file with your own articles and then chat wi
 - `.env` –> Environment variable template
 
 ## Environment
-Create a `.env` file (or set env vars in your shell):
+Create a `.env` file :
 
 ```
 MONGODB_URI=mongodb://localhost:27017
