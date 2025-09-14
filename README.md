@@ -11,13 +11,13 @@ This service lets you upload a JSON file with your own articles and then chat wi
 -Prompt: Answers must come ONLY from your articles; otherwise: "I don't have information on that."
 
 ## Project Structure
-- `main.py` – FastAPI app and endpoints (`/upload`, `/chat`)
-- `db.py` – MongoDB connection (Motor), startup/shutdown hooks
-- `gemini_client.py` – Gemini API client
-- `models.py` – Pydantic models for requests/responses
-- `utils.py` – Helpers (context building, trimming)
-- `requirements.txt` – Dependencies
-- `.env` – Environment variable template
+- `main.py` –> FastAPI app and endpoints (`/upload`, `/chat`)
+- `db.py` –> MongoDB connection.
+- `gemini_client.py` –> Gemini API client.
+- `models.py` –> Pydantic models for requests/responses.
+- `utils.py` –> Helpers like context building and trimming.
+- `requirements.txt` –> Dependencies
+- `.env` –> Environment variable template
 
 ## Environment
 Create a `.env` file (or set env vars in your shell):
@@ -27,10 +27,6 @@ MONGODB_URI=mongodb://localhost:27017
 MONGODB_DB_NAME=chatbotdb
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 GEMINI_MODEL=gemini-1.5-flash
-# TLS options (for Atlas on Windows if needed):
-# MONGODB_USE_CERTIFI=true
-# MONGODB_TLS_CA_BUNDLE=C:\\path\\to\\cacert.pem
-# MONGODB_TLS_ALLOW_INVALID_CERTS=false
 ```
 
 ## Run
