@@ -4,6 +4,16 @@ This service lets you upload a JSON file with your own articles and then chat wi
 > Note: This is a primitive chatbot built as part of the MVP for my Project [Autonomio.app](https://autonomio.app).  
 > It uses Google Gemini to answer strictly based on the uploaded articles.  
 
+## Requirements
+
+fastapi==0.111.0
+uvicorn==0.30.1
+python-dotenv==1.0.1
+pydantic==2.11.10
+motor==3.7.1
+pymongo==4.15.2
+google-genai==1.41.0
+
 
 ## Features
 - Upload articles JSON -> stored in MongoDB (Motor, async)
@@ -34,7 +44,7 @@ GEMINI_MODEL=gemini-1.5-flash
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate
 pip install -r requirements.txt
 ```
 
@@ -70,6 +80,7 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
   {"title": "Article 2", "content": "This is the content of Article 2."}
 ]
 ```
+
 
 
 
