@@ -5,7 +5,6 @@ This service lets you upload a JSON file with your own articles and then chat wi
 > It uses Google Gemini to answer strictly based on the uploaded articles.  
 
 ## Requirements
-
 -fastapi==0.111.0 
 -uvicorn==0.30.1
 -python-dotenv==1.0.1
@@ -80,6 +79,7 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
   {"title": "Article 2", "content": "This is the content of Article 2."}
 ]
 ```
+
 
 
 
