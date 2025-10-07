@@ -32,10 +32,10 @@ This service lets you upload a JSON file with your own articles and then chat wi
 Create a `.env` file :
 
 ```
-MONGODB_URI=mongodb://localhost:27017
-MONGODB_DB_NAME=chatbotdb
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-GEMINI_MODEL=gemini-1.5-flash
+MONGODB_URI="Your DB-URI"
+MONGODB_DB_NAME="Your DB-NAME"
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+GEMINI_MODEL="gemini-1.5-flash"
 ```
 
 ## Run
@@ -79,6 +79,7 @@ curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d '
   {"title": "Article 2", "content": "This is the content of Article 2."}
 ]
 ```
+
 
 
 
